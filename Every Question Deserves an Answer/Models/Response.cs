@@ -6,6 +6,6 @@
         public string Author { get; set; }
         public string Description { get; set; }
         public string IsAccepted { get; set; }
-        public int RequestId { get; set; }
+        public Request Request { get; set; }
     }
 }

@@ -6,24 +6,7 @@
 
         public ResponseRepository()
         {
-            this.responses = new List<Response>
-            {
-                new Response
-                {
-                    Id = 1,
-                    Author= "Steven Spielberg",
-                    Description= "Lo Squalo, Jurassic Park, Prova a prendermi, Schinder's list, Salvate il soldato Ryan, Ritorno al futuro, Indiana Jones",
-                    IsAccepted=""
-                },
-
-                new Response
-                {
-                    Id = 2,
-                    Author= "James Cameron",
-                    Description= "Titanic, Avatar, Terminator, Rambo 2, Sanctum 3D, Solaris",
-                    IsAccepted=""
-                }
-            };
+            responses = new List<Response>();
         }
         public IEnumerable<Response> GetAll()
         {

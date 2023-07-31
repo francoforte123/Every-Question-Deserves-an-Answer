@@ -30,10 +30,10 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <br />
-            <div class="form-group">
-                <label asp-for="IsAccepted" class="control-label"></label>
-                <input asp-for="IsAccepted" class="form-control" />
-                <span asp-validation-for="IsAccepted" class="text-danger"></span>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsAccepted" /> @Html.DisplayNameFor(model => model.IsAccepted)
+                </label>
             </div>
             <br />
             <div class="form-group">

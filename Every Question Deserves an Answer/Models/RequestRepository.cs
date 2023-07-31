@@ -14,16 +14,44 @@ namespace Every_Question_Deserves_an_Answer.Models
                 {
                     Id = 1,
                     Author= "Steven Spielberg",
-                    Title= "Write some movies turn around of Steven Spielberg",
-                    Description= ""
+                    Title= "Movies of Steven Spielberg",
+                    Description= "Write some movies turn around of Steven Spielberg",
+                    Responses= new List<Response>()
+                    {
+                        new Response
+                        {
+                            Id= 1,
+                            Author= "Steven Spielberg",
+                            Description= "Lo Squalo, Jurassic Park, Prova a prendermi, Schinder's list, Salvate il soldato Ryan, Ritorno al futuro, Indiana Jones",
+                            IsAccepted= "true",
+                            Request= new Request()
+                        },
+                        new Response
+                        {
+                            Id= 2,
+                            Author= "Steven Spielberg",
+                            Description= "I cavalieri dello zodiaco, Non così vicino, Mia, Il colibrì, Il grande giorno, Megan, L'esercista del papa",
+                            IsAccepted= "false",
+                            Request= new Request()
+                        },
+                        new Response
+                        {
+                            Id= 3,
+                            Author= "Steven Spielberg",
+                            Description= "Cocainorso, Grazie ragazzi, Fast & Furious 10, Black Adam, La stranezza, John Wick 4, Dune, House of Gucci",
+                            IsAccepted= "false",
+                            Request= new Request()
+                        },
+                    }
                 },
 
                 new Request
                 {
                     Id = 2,
-                    Author= "James Cameron",
-                    Title= "Write some movies turn around of James Cameron",
-                    Description= ""
+                    Author= "Test",
+                    Title= "Test",
+                    Description= "Test",
+                    Responses= new List<Response>(){}
                 }
             };
         }
